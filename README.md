@@ -1,2 +1,2 @@
-# proffy
-Developed in Next Level Week #02 - Rocketseat
+# Proffy
+E-learning platform to connect students with teachers 
