@@ -16,6 +16,17 @@
 /web/build
 
 # misc
+/server/.DS_Store
+/server/.env.local
+/server/.env.development.local
+/server/.env.test.local
+/server/.env.production.local
+
+/server/npm-debug.log*
+/server/yarn-debug.log*
+/server/yarn-error.log*
+
+
 /web/.DS_Store
 /web/.env.local
 /web/.env.development.local
