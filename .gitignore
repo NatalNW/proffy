@@ -1,6 +1,10 @@
 .vscode
 
+/server/src/database/database.sqlite
+
 # dependencies
+/server/node_modules
+
 /web/node_modules
 /web/.pnp
 /web/.pnp.js
