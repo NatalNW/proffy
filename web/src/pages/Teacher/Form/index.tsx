@@ -21,12 +21,12 @@ function TeacherForm() {
                     <Input name="name" label="Full Name" />
                     <Input name="avatar" label="Avatar" />
                     <Input name="whatsapp" label="Whatsapp" />
-                    <Textarea name="bio" label="Biography"/>
+                    <Textarea name="bio" label="Biography" />
                 </fieldset>
                 <fieldset>
                     <legend>About the class</legend>
-                    <Select 
-                        name="subject" 
+                    <Select
+                        name="subject"
                         label="Subject"
                         options={[
                             { value: 'Philosophy', label: 'Philosophy' },
@@ -40,6 +40,34 @@ function TeacherForm() {
                         ]}
                     />
                     <Input name="cost" label="Class price per time" />
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        Available Times
+                        <button type="button">
+                            + New Time
+                        </button>
+                    </legend>
+
+                    <div className="schedule-item">
+                        <Select
+                            name="subject"
+                            label="Subject"
+                            options={[
+                                { value: 'Philosophy', label: 'Philosophy' },
+                                { value: 'Biology', label: 'Biology' },
+                                { value: 'Arts', label: 'Arts' },
+                                { value: 'Algorithms', label: 'Algorithms' },
+                                { value: 'Math', label: 'Math' },
+                                { value: 'History', label: 'History' },
+                                { value: 'Geography', label: 'Geography' },
+                                { value: 'Physics', label: 'Physics' },
+                            ]}
+                        />
+                        <Input name="from" label="From" type="time"/>
+                        <Input name="to" label="To" type="time"/>
+                    </div>
                 </fieldset>
 
                 <footer>
