@@ -52,21 +52,20 @@ function TeacherForm() {
 
                     <div className="schedule-item">
                         <Select
-                            name="subject"
-                            label="Subject"
+                            name="week_day"
+                            label="Week Day"
                             options={[
-                                { value: 'Philosophy', label: 'Philosophy' },
-                                { value: 'Biology', label: 'Biology' },
-                                { value: 'Arts', label: 'Arts' },
-                                { value: 'Algorithms', label: 'Algorithms' },
-                                { value: 'Math', label: 'Math' },
-                                { value: 'History', label: 'History' },
-                                { value: 'Geography', label: 'Geography' },
-                                { value: 'Physics', label: 'Physics' },
+                                { value: '0', label: 'Monday' },
+                                { value: '1', label: 'Tuesday' },
+                                { value: '2', label: 'Wednesday' },
+                                { value: '3', label: 'Thursday' },
+                                { value: '4', label: 'Friday' },
+                                { value: '5', label: 'Saturday' },
+                                { value: '6', label: 'Sunday' },
                             ]}
                         />
-                        <Input name="from" label="From" type="time"/>
-                        <Input name="to" label="To" type="time"/>
+                        <Input name="from" label="From" type="time" />
+                        <Input name="to" label="To" type="time" />
                     </div>
                 </fieldset>
 
