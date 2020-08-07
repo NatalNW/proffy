@@ -5,6 +5,7 @@ import Input from '../../../components/Input';
 import warningIcon from '../../../assets/images/icons/warning.svg';
 import './style.css'
 import Textarea from '../../../components/TextArea';
+import Select from '../../../components/Select';
 
 function TeacherForm() {
     return (
@@ -24,7 +25,20 @@ function TeacherForm() {
                 </fieldset>
                 <fieldset>
                     <legend>About the class</legend>
-                    <Input name="subject" label="Subject" />
+                    <Select 
+                        name="subject" 
+                        label="Subject"
+                        options={[
+                            { value: 'Philosophy', label: 'Philosophy' },
+                            { value: 'Biology', label: 'Biology' },
+                            { value: 'Arts', label: 'Arts' },
+                            { value: 'Algorithms', label: 'Algorithms' },
+                            { value: 'Math', label: 'Math' },
+                            { value: 'History', label: 'History' },
+                            { value: 'Geography', label: 'Geography' },
+                            { value: 'Physics', label: 'Physics' },
+                        ]}
+                    />
                     <Input name="cost" label="Class price per time" />
                 </fieldset>
 
